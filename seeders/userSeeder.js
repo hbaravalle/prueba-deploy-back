@@ -25,6 +25,7 @@ module.exports = async () => {
     users.push({
       firstname: faker.person.firstName(),
       lastname: faker.person.lastName(),
+      avatar: "hello.jpeg",
     });
   }
 
