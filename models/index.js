@@ -7,7 +7,7 @@ const sequelize = new Sequelize(
   {
     host: process.env.DB_HOST, // Ej: 127.0.0.1
     dialect: process.env.DB_CONNECTION, // Ej: mysql
-    dialectModule: require(process.env.DB_DIALECT_MODULE),
+    dialectModule: require("pg"),
     logging: false, // Para que no aparezcan mensajes en consola.
   },
 );
